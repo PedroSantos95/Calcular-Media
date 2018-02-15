@@ -961,7 +961,7 @@
             // labelMedia
             // 
             this.labelMedia.AutoSize = true;
-            this.labelMedia.Location = new System.Drawing.Point(71, 35);
+            this.labelMedia.Location = new System.Drawing.Point(91, 35);
             this.labelMedia.Name = "labelMedia";
             this.labelMedia.Size = new System.Drawing.Size(42, 13);
             this.labelMedia.TabIndex = 8;
@@ -979,7 +979,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 32);
+            this.textBox1.Location = new System.Drawing.Point(142, 32);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(113, 20);

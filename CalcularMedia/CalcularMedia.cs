@@ -206,7 +206,10 @@ namespace CalcularMedia
 
         private void buttonCriarNovoUtilizador_Click(object sender, EventArgs e)
         {
-
+            if(textBoxNomeUtilizador.Text == "" || textBoxNumeroUtilizador.Text == "")
+            {
+                MessageBox.Show("Por favor preencha todos os campos!", "Erro ao Criar Utilizador");
+            }
         }
 
         private void buttonCalcularMedia_Click(object sender, EventArgs e)
