@@ -175,7 +175,7 @@ namespace CalcularMedia
                 label2_2_4.Text = "Sist. B. Dados:";
                 label2_2_4.Visible = true;
                 textBox2_2_4.Visible = true;
-                label2_2_5.Text = "Seg. Informacao:";
+                label2_2_5.Text = "Seg. Inform:";
                 label2_2_5.Visible = true;
                 textBox2_2_5.Visible = true;
 
@@ -203,6 +203,14 @@ namespace CalcularMedia
         private void buttonCarregarUtilizador_Click(object sender, EventArgs e)
         {
             count++;
+
+            string ramoUtilizadorAtivo = "";
+            int numeroUtilizadorAtivo = Int32.Parse(comboBoxUtilizadoresExistentes.SelectedValue.ToString());
+            textBoxNomeUtilizadorAtivo.Text = comboBoxUtilizadoresExistentes.Text;
+            textBoxNumeroUtilizadorAtivo.Text = comboBoxUtilizadoresExistentes.SelectedValue.ToString();
+            ramoUtilizadorAtivo = ramoUtilizador(numeroUtilizadorAtivo);
+            textBoxRamoUtilizadorAtivo.Text = ramoUtilizadorAtivo;
+
             carregarCadeirasRamoUtilizador();
         }
 
@@ -214,7 +222,9 @@ namespace CalcularMedia
             }
             else
             {
-                bool letrasNome = textBoxNomeUtilizador.Text.All(Char.IsLetter);
+                string nomeUtilizadorTeste = textBoxNomeUtilizador.Text;
+                nomeUtilizadorTeste = nomeUtilizadorTeste.Replace(" ", String.Empty);
+                bool letrasNome = nomeUtilizadorTeste.All(Char.IsLetter);
                 bool numerosNumero = textBoxNumeroUtilizador.Text.All(Char.IsDigit);
 
                 if (letrasNome == false || numerosNumero == false)
@@ -244,8 +254,11 @@ namespace CalcularMedia
                         sqlConn.Open();
                         da.InsertCommand.ExecuteNonQuery();
                         sqlConn.Close();
-                        MessageBox.Show("Adicionado com sucesso!", "Sucesso");
+                        MessageBox.Show("Adicionado com sucesso! Selecione agora dos existentes.", "Sucesso");
                         preencherComboBox();
+                        textBoxNumeroUtilizador.Clear();
+                        textBoxNomeUtilizador.Clear();
+                        comboBoxRamoCurso.SelectedItem = null;
                     }
                 }
             }
@@ -272,6 +285,24 @@ namespace CalcularMedia
                     }
                 }
             }
+        }
+
+        private string ramoUtilizador(int numeroUtilizador)
+        {
+            string[] ramo = new string[10];
+            SqlConnection sqlConn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CalcularMedia\CalcularMedia\BaseDadosUtilizadores.mdf;Integrated Security=True");
+            sqlConn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT [Ramo] FROM [Aluno] WHERE [Numero] = '" + numeroUtilizador + "'", sqlConn);
+            SqlDataReader myreader = cmd.ExecuteReader();
+
+            while (myreader.Read())
+            {
+                ramo[0] = Convert.ToString(myreader[0]);
+            }
+
+            sqlConn.Close();
+                
+            return ramo[0];
         }
     }
 }
