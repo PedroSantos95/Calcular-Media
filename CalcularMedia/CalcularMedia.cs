@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,8 +24,8 @@ namespace CalcularMedia
         private void carregarCadeirasRamoUtilizador()
         {
             string ramoUtilizador = textBoxRamoUtilizadorAtivo.Text;
-            
-            if(count%2 == 0)
+
+            if (count%2 == 0)
             {
                 ramoUtilizador = "TI";
             }
@@ -199,16 +201,51 @@ namespace CalcularMedia
 
         private void buttonCarregarUtilizador_Click(object sender, EventArgs e)
         {
-
             count++;
             carregarCadeirasRamoUtilizador();
         }
 
         private void buttonCriarNovoUtilizador_Click(object sender, EventArgs e)
         {
-            if(textBoxNomeUtilizador.Text == "" || textBoxNumeroUtilizador.Text == "")
+            if(textBoxNomeUtilizador.Text == "" || textBoxNumeroUtilizador.Text == "" || comboBoxRamoCurso.SelectedItem == null)
             {
                 MessageBox.Show("Por favor preencha todos os campos!", "Erro ao Criar Utilizador");
+            }
+            else
+            {
+                bool letrasNome = textBoxNomeUtilizador.Text.All(Char.IsLetter);
+                bool numerosNumero = textBoxNumeroUtilizador.Text.All(Char.IsDigit);
+
+                if (letrasNome == false || numerosNumero == false)
+                {
+                    MessageBox.Show("Por favor verifique se os campos estão bem preenchidos!", "Erro ao Criar Utilizador");
+                }
+                else
+                {
+                    if(textBoxNumeroUtilizador.Text.Length != 7)
+                    {
+                        MessageBox.Show("Por favor verifique o numero de aluno!", "Erro ao Criar Utilizador");
+                    }
+                    else
+                    {
+                        string nomeAluno = textBoxNomeUtilizador.Text;
+                        int numeroAluno = Int32.Parse(textBoxNumeroUtilizador.Text);
+                        string ramoAluno = comboBoxRamoCurso.SelectedItem.ToString();
+
+                        SqlConnection sqlConn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CalcularMedia\CalcularMedia\BaseDadosUtilizadores.mdf;Integrated Security=True");
+                        SqlDataAdapter da = new SqlDataAdapter();
+
+                        da.InsertCommand = new SqlCommand("INSERT INTO Aluno VALUES(@numero,@nome,@ramo,NULL)", sqlConn);
+                        da.InsertCommand.Parameters.Add("@numero", SqlDbType.Int).Value = numeroAluno;
+                        da.InsertCommand.Parameters.Add("@nome", SqlDbType.NVarChar).Value = nomeAluno;
+                        da.InsertCommand.Parameters.Add("@ramo", SqlDbType.NVarChar).Value = ramoAluno;
+
+                        sqlConn.Open();
+                        da.InsertCommand.ExecuteNonQuery();
+                        sqlConn.Close();
+                        MessageBox.Show("Adicionado com sucesso!", "Sucesso");
+                    }
+                }
             }
         }
 

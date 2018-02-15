@@ -1079,7 +1079,12 @@
             // 
             // comboBoxRamoCurso
             // 
+            this.comboBoxRamoCurso.DisplayMember = "(none)";
+            this.comboBoxRamoCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRamoCurso.FormattingEnabled = true;
+            this.comboBoxRamoCurso.Items.AddRange(new object[] {
+            "Sistemas Informação",
+            "Tecnlogias Informação"});
             this.comboBoxRamoCurso.Location = new System.Drawing.Point(69, 83);
             this.comboBoxRamoCurso.Name = "comboBoxRamoCurso";
             this.comboBoxRamoCurso.Size = new System.Drawing.Size(121, 21);
@@ -1150,6 +1155,7 @@
             // 
             // comboBoxUtilizadoresExistentes
             // 
+            this.comboBoxUtilizadoresExistentes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxUtilizadoresExistentes.FormattingEnabled = true;
             this.comboBoxUtilizadoresExistentes.Location = new System.Drawing.Point(201, 21);
             this.comboBoxUtilizadoresExistentes.Name = "comboBoxUtilizadoresExistentes";
