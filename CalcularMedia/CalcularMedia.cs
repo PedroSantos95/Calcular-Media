@@ -19,6 +19,7 @@ namespace CalcularMedia
         public CalcularMedia()
         {
             InitializeComponent();
+            preencherComboBox();
         }
 
         private void carregarCadeirasRamoUtilizador()
@@ -244,6 +245,7 @@ namespace CalcularMedia
                         da.InsertCommand.ExecuteNonQuery();
                         sqlConn.Close();
                         MessageBox.Show("Adicionado com sucesso!", "Sucesso");
+                        preencherComboBox();
                     }
                 }
             }
@@ -252,6 +254,24 @@ namespace CalcularMedia
         private void buttonCalcularMedia_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void preencherComboBox()
+        {
+            using (SqlConnection sqlConn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CalcularMedia\CalcularMedia\BaseDadosUtilizadores.mdf;Integrated Security=True"))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT [Numero], [Nome] FROM [Aluno]", sqlConn))
+                {
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        comboBoxUtilizadoresExistentes.DisplayMember = "Nome";
+                        comboBoxUtilizadoresExistentes.ValueMember = "Numero";
+                        comboBoxUtilizadoresExistentes.DataSource = dt;
+                    }
+                }
+            }
         }
     }
 }
