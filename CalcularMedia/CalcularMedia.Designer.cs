@@ -30,6 +30,13 @@
         {
             this.groupBox1Ano = new System.Windows.Forms.GroupBox();
             this.groupBox1Ano2Semestre = new System.Windows.Forms.GroupBox();
+            this.labelPreencherDados2 = new System.Windows.Forms.Label();
+            this.textBox1_2_6 = new System.Windows.Forms.TextBox();
+            this.textBox1_2_5 = new System.Windows.Forms.TextBox();
+            this.textBox1_2_4 = new System.Windows.Forms.TextBox();
+            this.textBox1_2_3 = new System.Windows.Forms.TextBox();
+            this.textBox1_2_2 = new System.Windows.Forms.TextBox();
+            this.textBox1_2_1 = new System.Windows.Forms.TextBox();
             this.label1_2_6 = new System.Windows.Forms.Label();
             this.label1_2_5 = new System.Windows.Forms.Label();
             this.label1_2_4 = new System.Windows.Forms.Label();
@@ -37,6 +44,11 @@
             this.label1_2_2 = new System.Windows.Forms.Label();
             this.label1_2_1 = new System.Windows.Forms.Label();
             this.groupBox1Ano1Semestre = new System.Windows.Forms.GroupBox();
+            this.labelPreencherDados1 = new System.Windows.Forms.Label();
+            this.textBox1_1_5 = new System.Windows.Forms.TextBox();
+            this.textBox1_1_4 = new System.Windows.Forms.TextBox();
+            this.textBox1_1_3 = new System.Windows.Forms.TextBox();
+            this.textBox1_1_2 = new System.Windows.Forms.TextBox();
             this.textBox1_1_1 = new System.Windows.Forms.TextBox();
             this.label1_1_5 = new System.Windows.Forms.Label();
             this.label1_1_4 = new System.Windows.Forms.Label();
@@ -47,10 +59,54 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox2Ano = new System.Windows.Forms.GroupBox();
             this.groupBox2Ano2Semstre = new System.Windows.Forms.GroupBox();
+            this.textBox2_2_5 = new System.Windows.Forms.TextBox();
+            this.textBox2_2_4 = new System.Windows.Forms.TextBox();
+            this.textBox2_2_3 = new System.Windows.Forms.TextBox();
+            this.textBox2_2_2 = new System.Windows.Forms.TextBox();
+            this.textBox2_2_1 = new System.Windows.Forms.TextBox();
+            this.label2_2_5 = new System.Windows.Forms.Label();
+            this.label2_2_4 = new System.Windows.Forms.Label();
+            this.label2_2_1 = new System.Windows.Forms.Label();
+            this.label2_2_3 = new System.Windows.Forms.Label();
+            this.label2_2_2 = new System.Windows.Forms.Label();
+            this.labelPreencherDados4 = new System.Windows.Forms.Label();
             this.groupBox2Ano1Semstre = new System.Windows.Forms.GroupBox();
+            this.textBox2_1_5 = new System.Windows.Forms.TextBox();
+            this.textBox2_1_4 = new System.Windows.Forms.TextBox();
+            this.textBox2_1_3 = new System.Windows.Forms.TextBox();
+            this.textBox2_1_2 = new System.Windows.Forms.TextBox();
+            this.textBox2_1_1 = new System.Windows.Forms.TextBox();
+            this.label2_1_5 = new System.Windows.Forms.Label();
+            this.label2_1_4 = new System.Windows.Forms.Label();
+            this.label2_1_1 = new System.Windows.Forms.Label();
+            this.label2_1_3 = new System.Windows.Forms.Label();
+            this.label2_1_2 = new System.Windows.Forms.Label();
+            this.labelPreencherDados3 = new System.Windows.Forms.Label();
             this.groupBox3Ano = new System.Windows.Forms.GroupBox();
             this.groupBox3Ano2Semstre = new System.Windows.Forms.GroupBox();
+            this.textBox3_2_5 = new System.Windows.Forms.TextBox();
+            this.textBox3_2_4 = new System.Windows.Forms.TextBox();
+            this.textBox3_2_3 = new System.Windows.Forms.TextBox();
+            this.textBox3_2_2 = new System.Windows.Forms.TextBox();
+            this.textBox3_2_1 = new System.Windows.Forms.TextBox();
+            this.label3_2_5 = new System.Windows.Forms.Label();
+            this.label3_2_4 = new System.Windows.Forms.Label();
+            this.label3_2_1 = new System.Windows.Forms.Label();
+            this.label3_2_3 = new System.Windows.Forms.Label();
+            this.label3_2_2 = new System.Windows.Forms.Label();
+            this.labelPreencherDados6 = new System.Windows.Forms.Label();
             this.groupBox3Ano1Semstre = new System.Windows.Forms.GroupBox();
+            this.textBox3_1_5 = new System.Windows.Forms.TextBox();
+            this.textBox3_1_4 = new System.Windows.Forms.TextBox();
+            this.textBox3_1_3 = new System.Windows.Forms.TextBox();
+            this.textBox3_1_2 = new System.Windows.Forms.TextBox();
+            this.textBox3_1_1 = new System.Windows.Forms.TextBox();
+            this.label3_1_5 = new System.Windows.Forms.Label();
+            this.label3_1_4 = new System.Windows.Forms.Label();
+            this.label3_1_1 = new System.Windows.Forms.Label();
+            this.label3_1_3 = new System.Windows.Forms.Label();
+            this.label3_1_2 = new System.Windows.Forms.Label();
+            this.labelPreencherDados5 = new System.Windows.Forms.Label();
             this.groupBoxDadosUtilizador = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelMedia = new System.Windows.Forms.Label();
@@ -75,62 +131,6 @@
             this.buttonCarregarUtilizador = new System.Windows.Forms.Button();
             this.comboBoxUtilizadoresExistentes = new System.Windows.Forms.ComboBox();
             this.labelUtilizadorExistente = new System.Windows.Forms.Label();
-            this.textBox1_1_2 = new System.Windows.Forms.TextBox();
-            this.textBox1_1_3 = new System.Windows.Forms.TextBox();
-            this.textBox1_1_4 = new System.Windows.Forms.TextBox();
-            this.textBox1_1_5 = new System.Windows.Forms.TextBox();
-            this.textBox1_2_1 = new System.Windows.Forms.TextBox();
-            this.textBox1_2_2 = new System.Windows.Forms.TextBox();
-            this.textBox1_2_3 = new System.Windows.Forms.TextBox();
-            this.textBox1_2_4 = new System.Windows.Forms.TextBox();
-            this.textBox1_2_5 = new System.Windows.Forms.TextBox();
-            this.textBox1_2_6 = new System.Windows.Forms.TextBox();
-            this.labelPreencherDados1 = new System.Windows.Forms.Label();
-            this.labelPreencherDados2 = new System.Windows.Forms.Label();
-            this.labelPreencherDados3 = new System.Windows.Forms.Label();
-            this.labelPreencherDados4 = new System.Windows.Forms.Label();
-            this.labelPreencherDados5 = new System.Windows.Forms.Label();
-            this.labelPreencherDados6 = new System.Windows.Forms.Label();
-            this.textBox2_1_5 = new System.Windows.Forms.TextBox();
-            this.textBox2_1_4 = new System.Windows.Forms.TextBox();
-            this.textBox2_1_3 = new System.Windows.Forms.TextBox();
-            this.textBox2_1_2 = new System.Windows.Forms.TextBox();
-            this.textBox2_1_1 = new System.Windows.Forms.TextBox();
-            this.label2_1_5 = new System.Windows.Forms.Label();
-            this.label2_1_4 = new System.Windows.Forms.Label();
-            this.label2_1_1 = new System.Windows.Forms.Label();
-            this.label2_1_3 = new System.Windows.Forms.Label();
-            this.label2_1_2 = new System.Windows.Forms.Label();
-            this.textBox2_2_5 = new System.Windows.Forms.TextBox();
-            this.textBox2_2_4 = new System.Windows.Forms.TextBox();
-            this.textBox2_2_3 = new System.Windows.Forms.TextBox();
-            this.textBox2_2_2 = new System.Windows.Forms.TextBox();
-            this.textBox2_2_1 = new System.Windows.Forms.TextBox();
-            this.label2_2_5 = new System.Windows.Forms.Label();
-            this.label2_2_4 = new System.Windows.Forms.Label();
-            this.label2_2_1 = new System.Windows.Forms.Label();
-            this.label2_2_3 = new System.Windows.Forms.Label();
-            this.label2_2_2 = new System.Windows.Forms.Label();
-            this.textBox3_1_5 = new System.Windows.Forms.TextBox();
-            this.textBox3_1_4 = new System.Windows.Forms.TextBox();
-            this.textBox3_1_3 = new System.Windows.Forms.TextBox();
-            this.textBox3_1_2 = new System.Windows.Forms.TextBox();
-            this.textBox3_1_1 = new System.Windows.Forms.TextBox();
-            this.label3_1_5 = new System.Windows.Forms.Label();
-            this.label3_1_4 = new System.Windows.Forms.Label();
-            this.label3_1_1 = new System.Windows.Forms.Label();
-            this.label3_1_3 = new System.Windows.Forms.Label();
-            this.label3_1_2 = new System.Windows.Forms.Label();
-            this.textBox3_2_5 = new System.Windows.Forms.TextBox();
-            this.textBox3_2_4 = new System.Windows.Forms.TextBox();
-            this.textBox3_2_3 = new System.Windows.Forms.TextBox();
-            this.textBox3_2_2 = new System.Windows.Forms.TextBox();
-            this.textBox3_2_1 = new System.Windows.Forms.TextBox();
-            this.label3_2_5 = new System.Windows.Forms.Label();
-            this.label3_2_4 = new System.Windows.Forms.Label();
-            this.label3_2_1 = new System.Windows.Forms.Label();
-            this.label3_2_3 = new System.Windows.Forms.Label();
-            this.label3_2_2 = new System.Windows.Forms.Label();
             this.groupBox1Ano.SuspendLayout();
             this.groupBox1Ano2Semestre.SuspendLayout();
             this.groupBox1Ano1Semestre.SuspendLayout();
@@ -181,24 +181,81 @@
             this.groupBox1Ano2Semestre.TabStop = false;
             this.groupBox1Ano2Semestre.Text = "2º Semestre";
             // 
+            // labelPreencherDados2
+            // 
+            this.labelPreencherDados2.AutoSize = true;
+            this.labelPreencherDados2.Location = new System.Drawing.Point(226, 117);
+            this.labelPreencherDados2.Name = "labelPreencherDados2";
+            this.labelPreencherDados2.Size = new System.Drawing.Size(163, 13);
+            this.labelPreencherDados2.TabIndex = 17;
+            this.labelPreencherDados2.Text = "Preencha os Dados de Utilzador!";
+            // 
+            // textBox1_2_6
+            // 
+            this.textBox1_2_6.Location = new System.Drawing.Point(288, 55);
+            this.textBox1_2_6.Name = "textBox1_2_6";
+            this.textBox1_2_6.Size = new System.Drawing.Size(100, 20);
+            this.textBox1_2_6.TabIndex = 16;
+            this.textBox1_2_6.Visible = false;
+            // 
+            // textBox1_2_5
+            // 
+            this.textBox1_2_5.Location = new System.Drawing.Point(288, 24);
+            this.textBox1_2_5.Name = "textBox1_2_5";
+            this.textBox1_2_5.Size = new System.Drawing.Size(100, 20);
+            this.textBox1_2_5.TabIndex = 15;
+            this.textBox1_2_5.Visible = false;
+            // 
+            // textBox1_2_4
+            // 
+            this.textBox1_2_4.Location = new System.Drawing.Point(85, 106);
+            this.textBox1_2_4.Name = "textBox1_2_4";
+            this.textBox1_2_4.Size = new System.Drawing.Size(100, 20);
+            this.textBox1_2_4.TabIndex = 14;
+            this.textBox1_2_4.Visible = false;
+            // 
+            // textBox1_2_3
+            // 
+            this.textBox1_2_3.Location = new System.Drawing.Point(85, 80);
+            this.textBox1_2_3.Name = "textBox1_2_3";
+            this.textBox1_2_3.Size = new System.Drawing.Size(100, 20);
+            this.textBox1_2_3.TabIndex = 13;
+            this.textBox1_2_3.Visible = false;
+            // 
+            // textBox1_2_2
+            // 
+            this.textBox1_2_2.Location = new System.Drawing.Point(85, 55);
+            this.textBox1_2_2.Name = "textBox1_2_2";
+            this.textBox1_2_2.Size = new System.Drawing.Size(100, 20);
+            this.textBox1_2_2.TabIndex = 12;
+            this.textBox1_2_2.Visible = false;
+            // 
+            // textBox1_2_1
+            // 
+            this.textBox1_2_1.Location = new System.Drawing.Point(85, 25);
+            this.textBox1_2_1.Name = "textBox1_2_1";
+            this.textBox1_2_1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1_2_1.TabIndex = 11;
+            this.textBox1_2_1.Visible = false;
+            // 
             // label1_2_6
             // 
             this.label1_2_6.AutoSize = true;
-            this.label1_2_6.Location = new System.Drawing.Point(191, 58);
+            this.label1_2_6.Location = new System.Drawing.Point(207, 58);
             this.label1_2_6.Name = "label1_2_6";
-            this.label1_2_6.Size = new System.Drawing.Size(41, 13);
+            this.label1_2_6.Size = new System.Drawing.Size(75, 13);
             this.label1_2_6.TabIndex = 6;
-            this.label1_2_6.Text = "label12";
+            this.label1_2_6.Text = "labelProvisoria";
             this.label1_2_6.Visible = false;
             // 
             // label1_2_5
             // 
             this.label1_2_5.AutoSize = true;
-            this.label1_2_5.Location = new System.Drawing.Point(191, 28);
+            this.label1_2_5.Location = new System.Drawing.Point(207, 28);
             this.label1_2_5.Name = "label1_2_5";
-            this.label1_2_5.Size = new System.Drawing.Size(41, 13);
+            this.label1_2_5.Size = new System.Drawing.Size(75, 13);
             this.label1_2_5.TabIndex = 5;
-            this.label1_2_5.Text = "label11";
+            this.label1_2_5.Text = "labelProvisoria";
             this.label1_2_5.Visible = false;
             // 
             // label1_2_4
@@ -206,9 +263,9 @@
             this.label1_2_4.AutoSize = true;
             this.label1_2_4.Location = new System.Drawing.Point(6, 109);
             this.label1_2_4.Name = "label1_2_4";
-            this.label1_2_4.Size = new System.Drawing.Size(35, 13);
+            this.label1_2_4.Size = new System.Drawing.Size(75, 13);
             this.label1_2_4.TabIndex = 4;
-            this.label1_2_4.Text = "label9";
+            this.label1_2_4.Text = "labelProvisoria";
             this.label1_2_4.Visible = false;
             // 
             // label1_2_3
@@ -216,9 +273,9 @@
             this.label1_2_3.AutoSize = true;
             this.label1_2_3.Location = new System.Drawing.Point(6, 84);
             this.label1_2_3.Name = "label1_2_3";
-            this.label1_2_3.Size = new System.Drawing.Size(35, 13);
+            this.label1_2_3.Size = new System.Drawing.Size(75, 13);
             this.label1_2_3.TabIndex = 3;
-            this.label1_2_3.Text = "label8";
+            this.label1_2_3.Text = "labelProvisoria";
             this.label1_2_3.Visible = false;
             // 
             // label1_2_2
@@ -226,9 +283,9 @@
             this.label1_2_2.AutoSize = true;
             this.label1_2_2.Location = new System.Drawing.Point(6, 58);
             this.label1_2_2.Name = "label1_2_2";
-            this.label1_2_2.Size = new System.Drawing.Size(35, 13);
+            this.label1_2_2.Size = new System.Drawing.Size(75, 13);
             this.label1_2_2.TabIndex = 2;
-            this.label1_2_2.Text = "label7";
+            this.label1_2_2.Text = "labelProvisoria";
             this.label1_2_2.Visible = false;
             // 
             // label1_2_1
@@ -236,9 +293,9 @@
             this.label1_2_1.AutoSize = true;
             this.label1_2_1.Location = new System.Drawing.Point(6, 28);
             this.label1_2_1.Name = "label1_2_1";
-            this.label1_2_1.Size = new System.Drawing.Size(35, 13);
+            this.label1_2_1.Size = new System.Drawing.Size(75, 13);
             this.label1_2_1.TabIndex = 1;
-            this.label1_2_1.Text = "label6";
+            this.label1_2_1.Text = "labelProvisoria";
             this.label1_2_1.Visible = false;
             // 
             // groupBox1Ano1Semestre
@@ -261,6 +318,47 @@
             this.groupBox1Ano1Semestre.TabStop = false;
             this.groupBox1Ano1Semestre.Text = "1º Semestre";
             // 
+            // labelPreencherDados1
+            // 
+            this.labelPreencherDados1.AutoSize = true;
+            this.labelPreencherDados1.Location = new System.Drawing.Point(197, 117);
+            this.labelPreencherDados1.Name = "labelPreencherDados1";
+            this.labelPreencherDados1.Size = new System.Drawing.Size(163, 13);
+            this.labelPreencherDados1.TabIndex = 11;
+            this.labelPreencherDados1.Text = "Preencha os Dados de Utilzador!";
+            // 
+            // textBox1_1_5
+            // 
+            this.textBox1_1_5.Location = new System.Drawing.Point(264, 28);
+            this.textBox1_1_5.Name = "textBox1_1_5";
+            this.textBox1_1_5.Size = new System.Drawing.Size(100, 20);
+            this.textBox1_1_5.TabIndex = 10;
+            this.textBox1_1_5.Visible = false;
+            // 
+            // textBox1_1_4
+            // 
+            this.textBox1_1_4.Location = new System.Drawing.Point(82, 110);
+            this.textBox1_1_4.Name = "textBox1_1_4";
+            this.textBox1_1_4.Size = new System.Drawing.Size(100, 20);
+            this.textBox1_1_4.TabIndex = 9;
+            this.textBox1_1_4.Visible = false;
+            // 
+            // textBox1_1_3
+            // 
+            this.textBox1_1_3.Location = new System.Drawing.Point(82, 84);
+            this.textBox1_1_3.Name = "textBox1_1_3";
+            this.textBox1_1_3.Size = new System.Drawing.Size(100, 20);
+            this.textBox1_1_3.TabIndex = 8;
+            this.textBox1_1_3.Visible = false;
+            // 
+            // textBox1_1_2
+            // 
+            this.textBox1_1_2.Location = new System.Drawing.Point(82, 55);
+            this.textBox1_1_2.Name = "textBox1_1_2";
+            this.textBox1_1_2.Size = new System.Drawing.Size(100, 20);
+            this.textBox1_1_2.TabIndex = 7;
+            this.textBox1_1_2.Visible = false;
+            // 
             // textBox1_1_1
             // 
             this.textBox1_1_1.Location = new System.Drawing.Point(82, 28);
@@ -272,11 +370,11 @@
             // label1_1_5
             // 
             this.label1_1_5.AutoSize = true;
-            this.label1_1_5.Location = new System.Drawing.Point(197, 32);
+            this.label1_1_5.Location = new System.Drawing.Point(188, 32);
             this.label1_1_5.Name = "label1_1_5";
-            this.label1_1_5.Size = new System.Drawing.Size(41, 13);
+            this.label1_1_5.Size = new System.Drawing.Size(75, 13);
             this.label1_1_5.TabIndex = 5;
-            this.label1_1_5.Text = "label10";
+            this.label1_1_5.Text = "labelProvisoria";
             this.label1_1_5.Visible = false;
             // 
             // label1_1_4
@@ -284,9 +382,9 @@
             this.label1_1_4.AutoSize = true;
             this.label1_1_4.Location = new System.Drawing.Point(7, 113);
             this.label1_1_4.Name = "label1_1_4";
-            this.label1_1_4.Size = new System.Drawing.Size(35, 13);
+            this.label1_1_4.Size = new System.Drawing.Size(75, 13);
             this.label1_1_4.TabIndex = 4;
-            this.label1_1_4.Text = "label5";
+            this.label1_1_4.Text = "labelProvisoria";
             this.label1_1_4.Visible = false;
             // 
             // label1_1_1
@@ -294,9 +392,9 @@
             this.label1_1_1.AutoSize = true;
             this.label1_1_1.Location = new System.Drawing.Point(7, 31);
             this.label1_1_1.Name = "label1_1_1";
-            this.label1_1_1.Size = new System.Drawing.Size(35, 13);
+            this.label1_1_1.Size = new System.Drawing.Size(75, 13);
             this.label1_1_1.TabIndex = 3;
-            this.label1_1_1.Text = "label2";
+            this.label1_1_1.Text = "labelProvisoria";
             this.label1_1_1.Visible = false;
             // 
             // label1_1_3
@@ -304,9 +402,9 @@
             this.label1_1_3.AutoSize = true;
             this.label1_1_3.Location = new System.Drawing.Point(7, 87);
             this.label1_1_3.Name = "label1_1_3";
-            this.label1_1_3.Size = new System.Drawing.Size(35, 13);
+            this.label1_1_3.Size = new System.Drawing.Size(75, 13);
             this.label1_1_3.TabIndex = 2;
-            this.label1_1_3.Text = "label4";
+            this.label1_1_3.Text = "labelProvisoria";
             this.label1_1_3.Visible = false;
             // 
             // label1_1_2
@@ -314,9 +412,9 @@
             this.label1_1_2.AutoSize = true;
             this.label1_1_2.Location = new System.Drawing.Point(7, 58);
             this.label1_1_2.Name = "label1_1_2";
-            this.label1_1_2.Size = new System.Drawing.Size(35, 13);
+            this.label1_1_2.Size = new System.Drawing.Size(75, 13);
             this.label1_1_2.TabIndex = 1;
-            this.label1_1_2.Text = "label3";
+            this.label1_1_2.Text = "labelProvisoria";
             this.label1_1_2.Visible = false;
             // 
             // groupBoxProgressoCurso
@@ -367,6 +465,105 @@
             this.groupBox2Ano2Semstre.TabStop = false;
             this.groupBox2Ano2Semstre.Text = "2º Semestre";
             // 
+            // textBox2_2_5
+            // 
+            this.textBox2_2_5.Location = new System.Drawing.Point(288, 24);
+            this.textBox2_2_5.Name = "textBox2_2_5";
+            this.textBox2_2_5.Size = new System.Drawing.Size(100, 20);
+            this.textBox2_2_5.TabIndex = 22;
+            this.textBox2_2_5.Visible = false;
+            // 
+            // textBox2_2_4
+            // 
+            this.textBox2_2_4.Location = new System.Drawing.Point(95, 106);
+            this.textBox2_2_4.Name = "textBox2_2_4";
+            this.textBox2_2_4.Size = new System.Drawing.Size(100, 20);
+            this.textBox2_2_4.TabIndex = 21;
+            this.textBox2_2_4.Visible = false;
+            // 
+            // textBox2_2_3
+            // 
+            this.textBox2_2_3.Location = new System.Drawing.Point(95, 80);
+            this.textBox2_2_3.Name = "textBox2_2_3";
+            this.textBox2_2_3.Size = new System.Drawing.Size(100, 20);
+            this.textBox2_2_3.TabIndex = 20;
+            this.textBox2_2_3.Visible = false;
+            // 
+            // textBox2_2_2
+            // 
+            this.textBox2_2_2.Location = new System.Drawing.Point(95, 51);
+            this.textBox2_2_2.Name = "textBox2_2_2";
+            this.textBox2_2_2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2_2_2.TabIndex = 19;
+            this.textBox2_2_2.Visible = false;
+            // 
+            // textBox2_2_1
+            // 
+            this.textBox2_2_1.Location = new System.Drawing.Point(95, 24);
+            this.textBox2_2_1.Name = "textBox2_2_1";
+            this.textBox2_2_1.Size = new System.Drawing.Size(100, 20);
+            this.textBox2_2_1.TabIndex = 18;
+            this.textBox2_2_1.Visible = false;
+            // 
+            // label2_2_5
+            // 
+            this.label2_2_5.AutoSize = true;
+            this.label2_2_5.Location = new System.Drawing.Point(207, 27);
+            this.label2_2_5.Name = "label2_2_5";
+            this.label2_2_5.Size = new System.Drawing.Size(75, 13);
+            this.label2_2_5.TabIndex = 17;
+            this.label2_2_5.Text = "labelProvisoria";
+            this.label2_2_5.Visible = false;
+            // 
+            // label2_2_4
+            // 
+            this.label2_2_4.AutoSize = true;
+            this.label2_2_4.Location = new System.Drawing.Point(20, 109);
+            this.label2_2_4.Name = "label2_2_4";
+            this.label2_2_4.Size = new System.Drawing.Size(75, 13);
+            this.label2_2_4.TabIndex = 16;
+            this.label2_2_4.Text = "labelProvisoria";
+            this.label2_2_4.Visible = false;
+            // 
+            // label2_2_1
+            // 
+            this.label2_2_1.AutoSize = true;
+            this.label2_2_1.Location = new System.Drawing.Point(20, 27);
+            this.label2_2_1.Name = "label2_2_1";
+            this.label2_2_1.Size = new System.Drawing.Size(75, 13);
+            this.label2_2_1.TabIndex = 15;
+            this.label2_2_1.Text = "labelProvisoria";
+            this.label2_2_1.Visible = false;
+            // 
+            // label2_2_3
+            // 
+            this.label2_2_3.AutoSize = true;
+            this.label2_2_3.Location = new System.Drawing.Point(20, 83);
+            this.label2_2_3.Name = "label2_2_3";
+            this.label2_2_3.Size = new System.Drawing.Size(75, 13);
+            this.label2_2_3.TabIndex = 14;
+            this.label2_2_3.Text = "labelProvisoria";
+            this.label2_2_3.Visible = false;
+            // 
+            // label2_2_2
+            // 
+            this.label2_2_2.AutoSize = true;
+            this.label2_2_2.Location = new System.Drawing.Point(20, 54);
+            this.label2_2_2.Name = "label2_2_2";
+            this.label2_2_2.Size = new System.Drawing.Size(75, 13);
+            this.label2_2_2.TabIndex = 13;
+            this.label2_2_2.Text = "labelProvisoria";
+            this.label2_2_2.Visible = false;
+            // 
+            // labelPreencherDados4
+            // 
+            this.labelPreencherDados4.AutoSize = true;
+            this.labelPreencherDados4.Location = new System.Drawing.Point(225, 118);
+            this.labelPreencherDados4.Name = "labelPreencherDados4";
+            this.labelPreencherDados4.Size = new System.Drawing.Size(163, 13);
+            this.labelPreencherDados4.TabIndex = 12;
+            this.labelPreencherDados4.Text = "Preencha os Dados de Utilzador!";
+            // 
             // groupBox2Ano1Semstre
             // 
             this.groupBox2Ano1Semstre.Controls.Add(this.textBox2_1_5);
@@ -386,6 +583,105 @@
             this.groupBox2Ano1Semstre.TabIndex = 3;
             this.groupBox2Ano1Semstre.TabStop = false;
             this.groupBox2Ano1Semstre.Text = "1º Semestre";
+            // 
+            // textBox2_1_5
+            // 
+            this.textBox2_1_5.Location = new System.Drawing.Point(266, 24);
+            this.textBox2_1_5.Name = "textBox2_1_5";
+            this.textBox2_1_5.Size = new System.Drawing.Size(100, 20);
+            this.textBox2_1_5.TabIndex = 22;
+            this.textBox2_1_5.Visible = false;
+            // 
+            // textBox2_1_4
+            // 
+            this.textBox2_1_4.Location = new System.Drawing.Point(84, 106);
+            this.textBox2_1_4.Name = "textBox2_1_4";
+            this.textBox2_1_4.Size = new System.Drawing.Size(100, 20);
+            this.textBox2_1_4.TabIndex = 21;
+            this.textBox2_1_4.Visible = false;
+            // 
+            // textBox2_1_3
+            // 
+            this.textBox2_1_3.Location = new System.Drawing.Point(84, 80);
+            this.textBox2_1_3.Name = "textBox2_1_3";
+            this.textBox2_1_3.Size = new System.Drawing.Size(100, 20);
+            this.textBox2_1_3.TabIndex = 20;
+            this.textBox2_1_3.Visible = false;
+            // 
+            // textBox2_1_2
+            // 
+            this.textBox2_1_2.Location = new System.Drawing.Point(84, 51);
+            this.textBox2_1_2.Name = "textBox2_1_2";
+            this.textBox2_1_2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2_1_2.TabIndex = 19;
+            this.textBox2_1_2.Visible = false;
+            // 
+            // textBox2_1_1
+            // 
+            this.textBox2_1_1.Location = new System.Drawing.Point(84, 24);
+            this.textBox2_1_1.Name = "textBox2_1_1";
+            this.textBox2_1_1.Size = new System.Drawing.Size(100, 20);
+            this.textBox2_1_1.TabIndex = 18;
+            this.textBox2_1_1.Visible = false;
+            // 
+            // label2_1_5
+            // 
+            this.label2_1_5.AutoSize = true;
+            this.label2_1_5.Location = new System.Drawing.Point(188, 28);
+            this.label2_1_5.Name = "label2_1_5";
+            this.label2_1_5.Size = new System.Drawing.Size(75, 13);
+            this.label2_1_5.TabIndex = 17;
+            this.label2_1_5.Text = "labelProvisoria";
+            this.label2_1_5.Visible = false;
+            // 
+            // label2_1_4
+            // 
+            this.label2_1_4.AutoSize = true;
+            this.label2_1_4.Location = new System.Drawing.Point(9, 109);
+            this.label2_1_4.Name = "label2_1_4";
+            this.label2_1_4.Size = new System.Drawing.Size(75, 13);
+            this.label2_1_4.TabIndex = 16;
+            this.label2_1_4.Text = "labelProvisoria";
+            this.label2_1_4.Visible = false;
+            // 
+            // label2_1_1
+            // 
+            this.label2_1_1.AutoSize = true;
+            this.label2_1_1.Location = new System.Drawing.Point(9, 27);
+            this.label2_1_1.Name = "label2_1_1";
+            this.label2_1_1.Size = new System.Drawing.Size(75, 13);
+            this.label2_1_1.TabIndex = 15;
+            this.label2_1_1.Text = "labelProvisoria";
+            this.label2_1_1.Visible = false;
+            // 
+            // label2_1_3
+            // 
+            this.label2_1_3.AutoSize = true;
+            this.label2_1_3.Location = new System.Drawing.Point(9, 83);
+            this.label2_1_3.Name = "label2_1_3";
+            this.label2_1_3.Size = new System.Drawing.Size(75, 13);
+            this.label2_1_3.TabIndex = 14;
+            this.label2_1_3.Text = "labelProvisoria";
+            this.label2_1_3.Visible = false;
+            // 
+            // label2_1_2
+            // 
+            this.label2_1_2.AutoSize = true;
+            this.label2_1_2.Location = new System.Drawing.Point(9, 54);
+            this.label2_1_2.Name = "label2_1_2";
+            this.label2_1_2.Size = new System.Drawing.Size(75, 13);
+            this.label2_1_2.TabIndex = 13;
+            this.label2_1_2.Text = "labelProvisoria";
+            this.label2_1_2.Visible = false;
+            // 
+            // labelPreencherDados3
+            // 
+            this.labelPreencherDados3.AutoSize = true;
+            this.labelPreencherDados3.Location = new System.Drawing.Point(197, 118);
+            this.labelPreencherDados3.Name = "labelPreencherDados3";
+            this.labelPreencherDados3.Size = new System.Drawing.Size(163, 13);
+            this.labelPreencherDados3.TabIndex = 12;
+            this.labelPreencherDados3.Text = "Preencha os Dados de Utilzador!";
             // 
             // groupBox3Ano
             // 
@@ -418,6 +714,105 @@
             this.groupBox3Ano2Semstre.TabStop = false;
             this.groupBox3Ano2Semstre.Text = "2º Semestre";
             // 
+            // textBox3_2_5
+            // 
+            this.textBox3_2_5.Location = new System.Drawing.Point(288, 21);
+            this.textBox3_2_5.Name = "textBox3_2_5";
+            this.textBox3_2_5.Size = new System.Drawing.Size(100, 20);
+            this.textBox3_2_5.TabIndex = 22;
+            this.textBox3_2_5.Visible = false;
+            // 
+            // textBox3_2_4
+            // 
+            this.textBox3_2_4.Location = new System.Drawing.Point(94, 106);
+            this.textBox3_2_4.Name = "textBox3_2_4";
+            this.textBox3_2_4.Size = new System.Drawing.Size(100, 20);
+            this.textBox3_2_4.TabIndex = 21;
+            this.textBox3_2_4.Visible = false;
+            // 
+            // textBox3_2_3
+            // 
+            this.textBox3_2_3.Location = new System.Drawing.Point(94, 80);
+            this.textBox3_2_3.Name = "textBox3_2_3";
+            this.textBox3_2_3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3_2_3.TabIndex = 20;
+            this.textBox3_2_3.Visible = false;
+            // 
+            // textBox3_2_2
+            // 
+            this.textBox3_2_2.Location = new System.Drawing.Point(94, 51);
+            this.textBox3_2_2.Name = "textBox3_2_2";
+            this.textBox3_2_2.Size = new System.Drawing.Size(100, 20);
+            this.textBox3_2_2.TabIndex = 19;
+            this.textBox3_2_2.Visible = false;
+            // 
+            // textBox3_2_1
+            // 
+            this.textBox3_2_1.Location = new System.Drawing.Point(94, 24);
+            this.textBox3_2_1.Name = "textBox3_2_1";
+            this.textBox3_2_1.Size = new System.Drawing.Size(100, 20);
+            this.textBox3_2_1.TabIndex = 18;
+            this.textBox3_2_1.Visible = false;
+            // 
+            // label3_2_5
+            // 
+            this.label3_2_5.AutoSize = true;
+            this.label3_2_5.Location = new System.Drawing.Point(207, 27);
+            this.label3_2_5.Name = "label3_2_5";
+            this.label3_2_5.Size = new System.Drawing.Size(75, 13);
+            this.label3_2_5.TabIndex = 17;
+            this.label3_2_5.Text = "labelProvisoria";
+            this.label3_2_5.Visible = false;
+            // 
+            // label3_2_4
+            // 
+            this.label3_2_4.AutoSize = true;
+            this.label3_2_4.Location = new System.Drawing.Point(19, 109);
+            this.label3_2_4.Name = "label3_2_4";
+            this.label3_2_4.Size = new System.Drawing.Size(75, 13);
+            this.label3_2_4.TabIndex = 16;
+            this.label3_2_4.Text = "labelProvisoria";
+            this.label3_2_4.Visible = false;
+            // 
+            // label3_2_1
+            // 
+            this.label3_2_1.AutoSize = true;
+            this.label3_2_1.Location = new System.Drawing.Point(19, 27);
+            this.label3_2_1.Name = "label3_2_1";
+            this.label3_2_1.Size = new System.Drawing.Size(75, 13);
+            this.label3_2_1.TabIndex = 15;
+            this.label3_2_1.Text = "labelProvisoria";
+            this.label3_2_1.Visible = false;
+            // 
+            // label3_2_3
+            // 
+            this.label3_2_3.AutoSize = true;
+            this.label3_2_3.Location = new System.Drawing.Point(19, 83);
+            this.label3_2_3.Name = "label3_2_3";
+            this.label3_2_3.Size = new System.Drawing.Size(75, 13);
+            this.label3_2_3.TabIndex = 14;
+            this.label3_2_3.Text = "labelProvisoria";
+            this.label3_2_3.Visible = false;
+            // 
+            // label3_2_2
+            // 
+            this.label3_2_2.AutoSize = true;
+            this.label3_2_2.Location = new System.Drawing.Point(19, 54);
+            this.label3_2_2.Name = "label3_2_2";
+            this.label3_2_2.Size = new System.Drawing.Size(75, 13);
+            this.label3_2_2.TabIndex = 13;
+            this.label3_2_2.Text = "labelProvisoria";
+            this.label3_2_2.Visible = false;
+            // 
+            // labelPreencherDados6
+            // 
+            this.labelPreencherDados6.AutoSize = true;
+            this.labelPreencherDados6.Location = new System.Drawing.Point(225, 123);
+            this.labelPreencherDados6.Name = "labelPreencherDados6";
+            this.labelPreencherDados6.Size = new System.Drawing.Size(163, 13);
+            this.labelPreencherDados6.TabIndex = 12;
+            this.labelPreencherDados6.Text = "Preencha os Dados de Utilzador!";
+            // 
             // groupBox3Ano1Semstre
             // 
             this.groupBox3Ano1Semstre.Controls.Add(this.textBox3_1_5);
@@ -437,6 +832,105 @@
             this.groupBox3Ano1Semstre.TabIndex = 1;
             this.groupBox3Ano1Semstre.TabStop = false;
             this.groupBox3Ano1Semstre.Text = "1º Semestre";
+            // 
+            // textBox3_1_5
+            // 
+            this.textBox3_1_5.Location = new System.Drawing.Point(268, 25);
+            this.textBox3_1_5.Name = "textBox3_1_5";
+            this.textBox3_1_5.Size = new System.Drawing.Size(100, 20);
+            this.textBox3_1_5.TabIndex = 22;
+            this.textBox3_1_5.Visible = false;
+            // 
+            // textBox3_1_4
+            // 
+            this.textBox3_1_4.Location = new System.Drawing.Point(84, 106);
+            this.textBox3_1_4.Name = "textBox3_1_4";
+            this.textBox3_1_4.Size = new System.Drawing.Size(100, 20);
+            this.textBox3_1_4.TabIndex = 21;
+            this.textBox3_1_4.Visible = false;
+            // 
+            // textBox3_1_3
+            // 
+            this.textBox3_1_3.Location = new System.Drawing.Point(84, 80);
+            this.textBox3_1_3.Name = "textBox3_1_3";
+            this.textBox3_1_3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3_1_3.TabIndex = 20;
+            this.textBox3_1_3.Visible = false;
+            // 
+            // textBox3_1_2
+            // 
+            this.textBox3_1_2.Location = new System.Drawing.Point(84, 51);
+            this.textBox3_1_2.Name = "textBox3_1_2";
+            this.textBox3_1_2.Size = new System.Drawing.Size(100, 20);
+            this.textBox3_1_2.TabIndex = 19;
+            this.textBox3_1_2.Visible = false;
+            // 
+            // textBox3_1_1
+            // 
+            this.textBox3_1_1.Location = new System.Drawing.Point(84, 24);
+            this.textBox3_1_1.Name = "textBox3_1_1";
+            this.textBox3_1_1.Size = new System.Drawing.Size(100, 20);
+            this.textBox3_1_1.TabIndex = 18;
+            this.textBox3_1_1.Visible = false;
+            // 
+            // label3_1_5
+            // 
+            this.label3_1_5.AutoSize = true;
+            this.label3_1_5.Location = new System.Drawing.Point(188, 27);
+            this.label3_1_5.Name = "label3_1_5";
+            this.label3_1_5.Size = new System.Drawing.Size(75, 13);
+            this.label3_1_5.TabIndex = 17;
+            this.label3_1_5.Text = "labelProvisoria";
+            this.label3_1_5.Visible = false;
+            // 
+            // label3_1_4
+            // 
+            this.label3_1_4.AutoSize = true;
+            this.label3_1_4.Location = new System.Drawing.Point(9, 109);
+            this.label3_1_4.Name = "label3_1_4";
+            this.label3_1_4.Size = new System.Drawing.Size(75, 13);
+            this.label3_1_4.TabIndex = 16;
+            this.label3_1_4.Text = "labelProvisoria";
+            this.label3_1_4.Visible = false;
+            // 
+            // label3_1_1
+            // 
+            this.label3_1_1.AutoSize = true;
+            this.label3_1_1.Location = new System.Drawing.Point(9, 27);
+            this.label3_1_1.Name = "label3_1_1";
+            this.label3_1_1.Size = new System.Drawing.Size(75, 13);
+            this.label3_1_1.TabIndex = 15;
+            this.label3_1_1.Text = "labelProvisoria";
+            this.label3_1_1.Visible = false;
+            // 
+            // label3_1_3
+            // 
+            this.label3_1_3.AutoSize = true;
+            this.label3_1_3.Location = new System.Drawing.Point(9, 83);
+            this.label3_1_3.Name = "label3_1_3";
+            this.label3_1_3.Size = new System.Drawing.Size(75, 13);
+            this.label3_1_3.TabIndex = 14;
+            this.label3_1_3.Text = "labelProvisoria";
+            this.label3_1_3.Visible = false;
+            // 
+            // label3_1_2
+            // 
+            this.label3_1_2.AutoSize = true;
+            this.label3_1_2.Location = new System.Drawing.Point(9, 54);
+            this.label3_1_2.Name = "label3_1_2";
+            this.label3_1_2.Size = new System.Drawing.Size(75, 13);
+            this.label3_1_2.TabIndex = 13;
+            this.label3_1_2.Text = "labelProvisoria";
+            this.label3_1_2.Visible = false;
+            // 
+            // labelPreencherDados5
+            // 
+            this.labelPreencherDados5.AutoSize = true;
+            this.labelPreencherDados5.Location = new System.Drawing.Point(197, 123);
+            this.labelPreencherDados5.Name = "labelPreencherDados5";
+            this.labelPreencherDados5.Size = new System.Drawing.Size(163, 13);
+            this.labelPreencherDados5.TabIndex = 12;
+            this.labelPreencherDados5.Text = "Preencha os Dados de Utilzador!";
             // 
             // groupBoxDadosUtilizador
             // 
@@ -481,6 +975,7 @@
             this.buttonCalcularMedia.TabIndex = 5;
             this.buttonCalcularMedia.Text = "Calcular Média";
             this.buttonCalcularMedia.UseVisualStyleBackColor = true;
+            this.buttonCalcularMedia.Click += new System.EventHandler(this.buttonCalcularMedia_Click);
             // 
             // textBox1
             // 
@@ -580,6 +1075,7 @@
             this.buttonCriarNovoUtilizador.TabIndex = 6;
             this.buttonCriarNovoUtilizador.Text = "Criar Utilizador";
             this.buttonCriarNovoUtilizador.UseVisualStyleBackColor = true;
+            this.buttonCriarNovoUtilizador.Click += new System.EventHandler(this.buttonCriarNovoUtilizador_Click);
             // 
             // comboBoxRamoCurso
             // 
@@ -668,501 +1164,6 @@
             this.labelUtilizadorExistente.Size = new System.Drawing.Size(152, 13);
             this.labelUtilizadorExistente.TabIndex = 0;
             this.labelUtilizadorExistente.Text = "Selecionar Utilizador Existente:";
-            // 
-            // textBox1_1_2
-            // 
-            this.textBox1_1_2.Location = new System.Drawing.Point(82, 55);
-            this.textBox1_1_2.Name = "textBox1_1_2";
-            this.textBox1_1_2.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_1_2.TabIndex = 7;
-            this.textBox1_1_2.Visible = false;
-            // 
-            // textBox1_1_3
-            // 
-            this.textBox1_1_3.Location = new System.Drawing.Point(82, 84);
-            this.textBox1_1_3.Name = "textBox1_1_3";
-            this.textBox1_1_3.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_1_3.TabIndex = 8;
-            this.textBox1_1_3.Visible = false;
-            // 
-            // textBox1_1_4
-            // 
-            this.textBox1_1_4.Location = new System.Drawing.Point(82, 110);
-            this.textBox1_1_4.Name = "textBox1_1_4";
-            this.textBox1_1_4.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_1_4.TabIndex = 9;
-            this.textBox1_1_4.Visible = false;
-            // 
-            // textBox1_1_5
-            // 
-            this.textBox1_1_5.Location = new System.Drawing.Point(264, 28);
-            this.textBox1_1_5.Name = "textBox1_1_5";
-            this.textBox1_1_5.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_1_5.TabIndex = 10;
-            this.textBox1_1_5.Visible = false;
-            // 
-            // textBox1_2_1
-            // 
-            this.textBox1_2_1.Location = new System.Drawing.Point(68, 25);
-            this.textBox1_2_1.Name = "textBox1_2_1";
-            this.textBox1_2_1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_2_1.TabIndex = 11;
-            this.textBox1_2_1.Visible = false;
-            // 
-            // textBox1_2_2
-            // 
-            this.textBox1_2_2.Location = new System.Drawing.Point(68, 55);
-            this.textBox1_2_2.Name = "textBox1_2_2";
-            this.textBox1_2_2.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_2_2.TabIndex = 12;
-            this.textBox1_2_2.Visible = false;
-            // 
-            // textBox1_2_3
-            // 
-            this.textBox1_2_3.Location = new System.Drawing.Point(68, 81);
-            this.textBox1_2_3.Name = "textBox1_2_3";
-            this.textBox1_2_3.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_2_3.TabIndex = 13;
-            this.textBox1_2_3.Visible = false;
-            // 
-            // textBox1_2_4
-            // 
-            this.textBox1_2_4.Location = new System.Drawing.Point(68, 106);
-            this.textBox1_2_4.Name = "textBox1_2_4";
-            this.textBox1_2_4.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_2_4.TabIndex = 14;
-            this.textBox1_2_4.Visible = false;
-            // 
-            // textBox1_2_5
-            // 
-            this.textBox1_2_5.Location = new System.Drawing.Point(288, 24);
-            this.textBox1_2_5.Name = "textBox1_2_5";
-            this.textBox1_2_5.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_2_5.TabIndex = 15;
-            this.textBox1_2_5.Visible = false;
-            // 
-            // textBox1_2_6
-            // 
-            this.textBox1_2_6.Location = new System.Drawing.Point(288, 55);
-            this.textBox1_2_6.Name = "textBox1_2_6";
-            this.textBox1_2_6.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_2_6.TabIndex = 16;
-            this.textBox1_2_6.Visible = false;
-            // 
-            // labelPreencherDados1
-            // 
-            this.labelPreencherDados1.AutoSize = true;
-            this.labelPreencherDados1.Location = new System.Drawing.Point(197, 117);
-            this.labelPreencherDados1.Name = "labelPreencherDados1";
-            this.labelPreencherDados1.Size = new System.Drawing.Size(163, 13);
-            this.labelPreencherDados1.TabIndex = 11;
-            this.labelPreencherDados1.Text = "Preencha os Dados de Utilzador!";
-            // 
-            // labelPreencherDados2
-            // 
-            this.labelPreencherDados2.AutoSize = true;
-            this.labelPreencherDados2.Location = new System.Drawing.Point(226, 117);
-            this.labelPreencherDados2.Name = "labelPreencherDados2";
-            this.labelPreencherDados2.Size = new System.Drawing.Size(163, 13);
-            this.labelPreencherDados2.TabIndex = 17;
-            this.labelPreencherDados2.Text = "Preencha os Dados de Utilzador!";
-            // 
-            // labelPreencherDados3
-            // 
-            this.labelPreencherDados3.AutoSize = true;
-            this.labelPreencherDados3.Location = new System.Drawing.Point(197, 118);
-            this.labelPreencherDados3.Name = "labelPreencherDados3";
-            this.labelPreencherDados3.Size = new System.Drawing.Size(163, 13);
-            this.labelPreencherDados3.TabIndex = 12;
-            this.labelPreencherDados3.Text = "Preencha os Dados de Utilzador!";
-            // 
-            // labelPreencherDados4
-            // 
-            this.labelPreencherDados4.AutoSize = true;
-            this.labelPreencherDados4.Location = new System.Drawing.Point(225, 118);
-            this.labelPreencherDados4.Name = "labelPreencherDados4";
-            this.labelPreencherDados4.Size = new System.Drawing.Size(163, 13);
-            this.labelPreencherDados4.TabIndex = 12;
-            this.labelPreencherDados4.Text = "Preencha os Dados de Utilzador!";
-            // 
-            // labelPreencherDados5
-            // 
-            this.labelPreencherDados5.AutoSize = true;
-            this.labelPreencherDados5.Location = new System.Drawing.Point(197, 123);
-            this.labelPreencherDados5.Name = "labelPreencherDados5";
-            this.labelPreencherDados5.Size = new System.Drawing.Size(163, 13);
-            this.labelPreencherDados5.TabIndex = 12;
-            this.labelPreencherDados5.Text = "Preencha os Dados de Utilzador!";
-            // 
-            // labelPreencherDados6
-            // 
-            this.labelPreencherDados6.AutoSize = true;
-            this.labelPreencherDados6.Location = new System.Drawing.Point(225, 123);
-            this.labelPreencherDados6.Name = "labelPreencherDados6";
-            this.labelPreencherDados6.Size = new System.Drawing.Size(163, 13);
-            this.labelPreencherDados6.TabIndex = 12;
-            this.labelPreencherDados6.Text = "Preencha os Dados de Utilzador!";
-            // 
-            // textBox2_1_5
-            // 
-            this.textBox2_1_5.Location = new System.Drawing.Point(266, 24);
-            this.textBox2_1_5.Name = "textBox2_1_5";
-            this.textBox2_1_5.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_1_5.TabIndex = 22;
-            this.textBox2_1_5.Visible = false;
-            // 
-            // textBox2_1_4
-            // 
-            this.textBox2_1_4.Location = new System.Drawing.Point(84, 106);
-            this.textBox2_1_4.Name = "textBox2_1_4";
-            this.textBox2_1_4.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_1_4.TabIndex = 21;
-            this.textBox2_1_4.Visible = false;
-            // 
-            // textBox2_1_3
-            // 
-            this.textBox2_1_3.Location = new System.Drawing.Point(84, 80);
-            this.textBox2_1_3.Name = "textBox2_1_3";
-            this.textBox2_1_3.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_1_3.TabIndex = 20;
-            this.textBox2_1_3.Visible = false;
-            // 
-            // textBox2_1_2
-            // 
-            this.textBox2_1_2.Location = new System.Drawing.Point(84, 51);
-            this.textBox2_1_2.Name = "textBox2_1_2";
-            this.textBox2_1_2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_1_2.TabIndex = 19;
-            this.textBox2_1_2.Visible = false;
-            // 
-            // textBox2_1_1
-            // 
-            this.textBox2_1_1.Location = new System.Drawing.Point(84, 24);
-            this.textBox2_1_1.Name = "textBox2_1_1";
-            this.textBox2_1_1.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_1_1.TabIndex = 18;
-            this.textBox2_1_1.Visible = false;
-            // 
-            // label2_1_5
-            // 
-            this.label2_1_5.AutoSize = true;
-            this.label2_1_5.Location = new System.Drawing.Point(199, 28);
-            this.label2_1_5.Name = "label2_1_5";
-            this.label2_1_5.Size = new System.Drawing.Size(41, 13);
-            this.label2_1_5.TabIndex = 17;
-            this.label2_1_5.Text = "label10";
-            this.label2_1_5.Visible = false;
-            // 
-            // label2_1_4
-            // 
-            this.label2_1_4.AutoSize = true;
-            this.label2_1_4.Location = new System.Drawing.Point(9, 109);
-            this.label2_1_4.Name = "label2_1_4";
-            this.label2_1_4.Size = new System.Drawing.Size(35, 13);
-            this.label2_1_4.TabIndex = 16;
-            this.label2_1_4.Text = "label5";
-            this.label2_1_4.Visible = false;
-            // 
-            // label2_1_1
-            // 
-            this.label2_1_1.AutoSize = true;
-            this.label2_1_1.Location = new System.Drawing.Point(9, 27);
-            this.label2_1_1.Name = "label2_1_1";
-            this.label2_1_1.Size = new System.Drawing.Size(35, 13);
-            this.label2_1_1.TabIndex = 15;
-            this.label2_1_1.Text = "label2";
-            this.label2_1_1.Visible = false;
-            // 
-            // label2_1_3
-            // 
-            this.label2_1_3.AutoSize = true;
-            this.label2_1_3.Location = new System.Drawing.Point(9, 83);
-            this.label2_1_3.Name = "label2_1_3";
-            this.label2_1_3.Size = new System.Drawing.Size(35, 13);
-            this.label2_1_3.TabIndex = 14;
-            this.label2_1_3.Text = "label4";
-            this.label2_1_3.Visible = false;
-            this.label2_1_3.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label2_1_2
-            // 
-            this.label2_1_2.AutoSize = true;
-            this.label2_1_2.Location = new System.Drawing.Point(9, 54);
-            this.label2_1_2.Name = "label2_1_2";
-            this.label2_1_2.Size = new System.Drawing.Size(35, 13);
-            this.label2_1_2.TabIndex = 13;
-            this.label2_1_2.Text = "label3";
-            this.label2_1_2.Visible = false;
-            // 
-            // textBox2_2_5
-            // 
-            this.textBox2_2_5.Location = new System.Drawing.Point(277, 24);
-            this.textBox2_2_5.Name = "textBox2_2_5";
-            this.textBox2_2_5.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_2_5.TabIndex = 22;
-            this.textBox2_2_5.Visible = false;
-            // 
-            // textBox2_2_4
-            // 
-            this.textBox2_2_4.Location = new System.Drawing.Point(95, 106);
-            this.textBox2_2_4.Name = "textBox2_2_4";
-            this.textBox2_2_4.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_2_4.TabIndex = 21;
-            this.textBox2_2_4.Visible = false;
-            // 
-            // textBox2_2_3
-            // 
-            this.textBox2_2_3.Location = new System.Drawing.Point(95, 80);
-            this.textBox2_2_3.Name = "textBox2_2_3";
-            this.textBox2_2_3.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_2_3.TabIndex = 20;
-            this.textBox2_2_3.Visible = false;
-            // 
-            // textBox2_2_2
-            // 
-            this.textBox2_2_2.Location = new System.Drawing.Point(95, 51);
-            this.textBox2_2_2.Name = "textBox2_2_2";
-            this.textBox2_2_2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_2_2.TabIndex = 19;
-            this.textBox2_2_2.Visible = false;
-            // 
-            // textBox2_2_1
-            // 
-            this.textBox2_2_1.Location = new System.Drawing.Point(95, 24);
-            this.textBox2_2_1.Name = "textBox2_2_1";
-            this.textBox2_2_1.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_2_1.TabIndex = 18;
-            this.textBox2_2_1.Visible = false;
-            // 
-            // label2_2_5
-            // 
-            this.label2_2_5.AutoSize = true;
-            this.label2_2_5.Location = new System.Drawing.Point(210, 28);
-            this.label2_2_5.Name = "label2_2_5";
-            this.label2_2_5.Size = new System.Drawing.Size(41, 13);
-            this.label2_2_5.TabIndex = 17;
-            this.label2_2_5.Text = "label10";
-            this.label2_2_5.Visible = false;
-            // 
-            // label2_2_4
-            // 
-            this.label2_2_4.AutoSize = true;
-            this.label2_2_4.Location = new System.Drawing.Point(20, 109);
-            this.label2_2_4.Name = "label2_2_4";
-            this.label2_2_4.Size = new System.Drawing.Size(35, 13);
-            this.label2_2_4.TabIndex = 16;
-            this.label2_2_4.Text = "label5";
-            this.label2_2_4.Visible = false;
-            // 
-            // label2_2_1
-            // 
-            this.label2_2_1.AutoSize = true;
-            this.label2_2_1.Location = new System.Drawing.Point(20, 27);
-            this.label2_2_1.Name = "label2_2_1";
-            this.label2_2_1.Size = new System.Drawing.Size(35, 13);
-            this.label2_2_1.TabIndex = 15;
-            this.label2_2_1.Text = "label2";
-            this.label2_2_1.Visible = false;
-            // 
-            // label2_2_3
-            // 
-            this.label2_2_3.AutoSize = true;
-            this.label2_2_3.Location = new System.Drawing.Point(20, 83);
-            this.label2_2_3.Name = "label2_2_3";
-            this.label2_2_3.Size = new System.Drawing.Size(35, 13);
-            this.label2_2_3.TabIndex = 14;
-            this.label2_2_3.Text = "label4";
-            this.label2_2_3.Visible = false;
-            // 
-            // label2_2_2
-            // 
-            this.label2_2_2.AutoSize = true;
-            this.label2_2_2.Location = new System.Drawing.Point(20, 54);
-            this.label2_2_2.Name = "label2_2_2";
-            this.label2_2_2.Size = new System.Drawing.Size(35, 13);
-            this.label2_2_2.TabIndex = 13;
-            this.label2_2_2.Text = "label3";
-            this.label2_2_2.Visible = false;
-            // 
-            // textBox3_1_5
-            // 
-            this.textBox3_1_5.Location = new System.Drawing.Point(266, 24);
-            this.textBox3_1_5.Name = "textBox3_1_5";
-            this.textBox3_1_5.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_1_5.TabIndex = 22;
-            this.textBox3_1_5.Visible = false;
-            // 
-            // textBox3_1_4
-            // 
-            this.textBox3_1_4.Location = new System.Drawing.Point(84, 106);
-            this.textBox3_1_4.Name = "textBox3_1_4";
-            this.textBox3_1_4.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_1_4.TabIndex = 21;
-            this.textBox3_1_4.Visible = false;
-            // 
-            // textBox3_1_3
-            // 
-            this.textBox3_1_3.Location = new System.Drawing.Point(84, 80);
-            this.textBox3_1_3.Name = "textBox3_1_3";
-            this.textBox3_1_3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_1_3.TabIndex = 20;
-            this.textBox3_1_3.Visible = false;
-            // 
-            // textBox3_1_2
-            // 
-            this.textBox3_1_2.Location = new System.Drawing.Point(84, 51);
-            this.textBox3_1_2.Name = "textBox3_1_2";
-            this.textBox3_1_2.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_1_2.TabIndex = 19;
-            this.textBox3_1_2.Visible = false;
-            // 
-            // textBox3_1_1
-            // 
-            this.textBox3_1_1.Location = new System.Drawing.Point(84, 24);
-            this.textBox3_1_1.Name = "textBox3_1_1";
-            this.textBox3_1_1.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_1_1.TabIndex = 18;
-            this.textBox3_1_1.Visible = false;
-            // 
-            // label3_1_5
-            // 
-            this.label3_1_5.AutoSize = true;
-            this.label3_1_5.Location = new System.Drawing.Point(199, 28);
-            this.label3_1_5.Name = "label3_1_5";
-            this.label3_1_5.Size = new System.Drawing.Size(41, 13);
-            this.label3_1_5.TabIndex = 17;
-            this.label3_1_5.Text = "label10";
-            this.label3_1_5.Visible = false;
-            // 
-            // label3_1_4
-            // 
-            this.label3_1_4.AutoSize = true;
-            this.label3_1_4.Location = new System.Drawing.Point(9, 109);
-            this.label3_1_4.Name = "label3_1_4";
-            this.label3_1_4.Size = new System.Drawing.Size(35, 13);
-            this.label3_1_4.TabIndex = 16;
-            this.label3_1_4.Text = "label5";
-            this.label3_1_4.Visible = false;
-            // 
-            // label3_1_1
-            // 
-            this.label3_1_1.AutoSize = true;
-            this.label3_1_1.Location = new System.Drawing.Point(9, 27);
-            this.label3_1_1.Name = "label3_1_1";
-            this.label3_1_1.Size = new System.Drawing.Size(35, 13);
-            this.label3_1_1.TabIndex = 15;
-            this.label3_1_1.Text = "label2";
-            this.label3_1_1.Visible = false;
-            // 
-            // label3_1_3
-            // 
-            this.label3_1_3.AutoSize = true;
-            this.label3_1_3.Location = new System.Drawing.Point(9, 83);
-            this.label3_1_3.Name = "label3_1_3";
-            this.label3_1_3.Size = new System.Drawing.Size(35, 13);
-            this.label3_1_3.TabIndex = 14;
-            this.label3_1_3.Text = "label4";
-            this.label3_1_3.Visible = false;
-            // 
-            // label3_1_2
-            // 
-            this.label3_1_2.AutoSize = true;
-            this.label3_1_2.Location = new System.Drawing.Point(9, 54);
-            this.label3_1_2.Name = "label3_1_2";
-            this.label3_1_2.Size = new System.Drawing.Size(35, 13);
-            this.label3_1_2.TabIndex = 13;
-            this.label3_1_2.Text = "label3";
-            this.label3_1_2.Visible = false;
-            // 
-            // textBox3_2_5
-            // 
-            this.textBox3_2_5.Location = new System.Drawing.Point(276, 24);
-            this.textBox3_2_5.Name = "textBox3_2_5";
-            this.textBox3_2_5.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_2_5.TabIndex = 22;
-            this.textBox3_2_5.Visible = false;
-            // 
-            // textBox3_2_4
-            // 
-            this.textBox3_2_4.Location = new System.Drawing.Point(94, 106);
-            this.textBox3_2_4.Name = "textBox3_2_4";
-            this.textBox3_2_4.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_2_4.TabIndex = 21;
-            this.textBox3_2_4.Visible = false;
-            // 
-            // textBox3_2_3
-            // 
-            this.textBox3_2_3.Location = new System.Drawing.Point(94, 80);
-            this.textBox3_2_3.Name = "textBox3_2_3";
-            this.textBox3_2_3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_2_3.TabIndex = 20;
-            this.textBox3_2_3.Visible = false;
-            // 
-            // textBox3_2_2
-            // 
-            this.textBox3_2_2.Location = new System.Drawing.Point(94, 51);
-            this.textBox3_2_2.Name = "textBox3_2_2";
-            this.textBox3_2_2.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_2_2.TabIndex = 19;
-            this.textBox3_2_2.Visible = false;
-            // 
-            // textBox3_2_1
-            // 
-            this.textBox3_2_1.Location = new System.Drawing.Point(94, 24);
-            this.textBox3_2_1.Name = "textBox3_2_1";
-            this.textBox3_2_1.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_2_1.TabIndex = 18;
-            this.textBox3_2_1.Visible = false;
-            // 
-            // label3_2_5
-            // 
-            this.label3_2_5.AutoSize = true;
-            this.label3_2_5.Location = new System.Drawing.Point(209, 28);
-            this.label3_2_5.Name = "label3_2_5";
-            this.label3_2_5.Size = new System.Drawing.Size(41, 13);
-            this.label3_2_5.TabIndex = 17;
-            this.label3_2_5.Text = "label10";
-            this.label3_2_5.Visible = false;
-            // 
-            // label3_2_4
-            // 
-            this.label3_2_4.AutoSize = true;
-            this.label3_2_4.Location = new System.Drawing.Point(19, 109);
-            this.label3_2_4.Name = "label3_2_4";
-            this.label3_2_4.Size = new System.Drawing.Size(35, 13);
-            this.label3_2_4.TabIndex = 16;
-            this.label3_2_4.Text = "label5";
-            this.label3_2_4.Visible = false;
-            // 
-            // label3_2_1
-            // 
-            this.label3_2_1.AutoSize = true;
-            this.label3_2_1.Location = new System.Drawing.Point(19, 27);
-            this.label3_2_1.Name = "label3_2_1";
-            this.label3_2_1.Size = new System.Drawing.Size(35, 13);
-            this.label3_2_1.TabIndex = 15;
-            this.label3_2_1.Text = "label2";
-            this.label3_2_1.Visible = false;
-            // 
-            // label3_2_3
-            // 
-            this.label3_2_3.AutoSize = true;
-            this.label3_2_3.Location = new System.Drawing.Point(19, 83);
-            this.label3_2_3.Name = "label3_2_3";
-            this.label3_2_3.Size = new System.Drawing.Size(35, 13);
-            this.label3_2_3.TabIndex = 14;
-            this.label3_2_3.Text = "label4";
-            this.label3_2_3.Visible = false;
-            // 
-            // label3_2_2
-            // 
-            this.label3_2_2.AutoSize = true;
-            this.label3_2_2.Location = new System.Drawing.Point(19, 54);
-            this.label3_2_2.Name = "label3_2_2";
-            this.label3_2_2.Size = new System.Drawing.Size(35, 13);
-            this.label3_2_2.TabIndex = 13;
-            this.label3_2_2.Text = "label3";
-            this.label3_2_2.Visible = false;
             // 
             // CalcularMedia
             // 
