@@ -807,7 +807,7 @@ namespace CalcularMedia
         private void calcularMediaPonderada(string ramoUtilizador, IDataRecord record)
         {
             decimal mediaPonderada = 0;
-            int creditosEfetuados = 0;
+            decimal creditosEfetuados = 0;
 
             decimal redesDados = 0;
             decimal adminSist = 0;
@@ -1377,8 +1377,9 @@ namespace CalcularMedia
             //Console.WriteLine(mediaPonderada);
             //Console.WriteLine(analise);
             textBoxCreditosEfetuados.Text = creditosEfetuados.ToString();
-            textBoxMediaUtilizador.Text = mediaPonderada.ToString();
-            progressBarCurso.Value = creditosEfetuados;
+            System.Math.Round(mediaPonderada, 2);
+            textBoxMediaUtilizador.Text = mediaPonderada.ToString("#.##"); 
+            progressBarCurso.Value = Int32.Parse(creditosEfetuados.ToString());
         }
     }
 }
