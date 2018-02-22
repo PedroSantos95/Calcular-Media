@@ -109,6 +109,8 @@
             this.labelPreencherDados5 = new System.Windows.Forms.Label();
             this.groupBoxDadosUtilizador = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxCreditosEfetuados = new System.Windows.Forms.TextBox();
+            this.labelCreditosEfetuados = new System.Windows.Forms.Label();
             this.labelMedia = new System.Windows.Forms.Label();
             this.buttonCalcularMedia = new System.Windows.Forms.Button();
             this.textBoxMediaUtilizador = new System.Windows.Forms.TextBox();
@@ -132,8 +134,6 @@
             this.comboBoxUtilizadoresExistentes = new System.Windows.Forms.ComboBox();
             this.labelUtilizadorExistente = new System.Windows.Forms.Label();
             this.buttonCarregarNotas = new System.Windows.Forms.Button();
-            this.labelCreditosEfetuados = new System.Windows.Forms.Label();
-            this.textBoxCreditosEfetuados = new System.Windows.Forms.TextBox();
             this.groupBox1Ano.SuspendLayout();
             this.groupBox1Ano2Semestre.SuspendLayout();
             this.groupBox1Ano1Semestre.SuspendLayout();
@@ -964,6 +964,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Média Ponderada";
             // 
+            // textBoxCreditosEfetuados
+            // 
+            this.textBoxCreditosEfetuados.Location = new System.Drawing.Point(114, 15);
+            this.textBoxCreditosEfetuados.Name = "textBoxCreditosEfetuados";
+            this.textBoxCreditosEfetuados.ReadOnly = true;
+            this.textBoxCreditosEfetuados.Size = new System.Drawing.Size(113, 20);
+            this.textBoxCreditosEfetuados.TabIndex = 10;
+            // 
+            // labelCreditosEfetuados
+            // 
+            this.labelCreditosEfetuados.AutoSize = true;
+            this.labelCreditosEfetuados.Location = new System.Drawing.Point(6, 18);
+            this.labelCreditosEfetuados.Name = "labelCreditosEfetuados";
+            this.labelCreditosEfetuados.Size = new System.Drawing.Size(102, 13);
+            this.labelCreditosEfetuados.TabIndex = 9;
+            this.labelCreditosEfetuados.Text = "Creditos Efetuados: ";
+            // 
             // labelMedia
             // 
             this.labelMedia.AutoSize = true;
@@ -981,6 +998,7 @@
             this.buttonCalcularMedia.TabIndex = 5;
             this.buttonCalcularMedia.Text = "Calcular Média";
             this.buttonCalcularMedia.UseVisualStyleBackColor = true;
+            this.buttonCalcularMedia.Visible = false;
             this.buttonCalcularMedia.Click += new System.EventHandler(this.buttonCalcularMedia_Click);
             // 
             // textBoxMediaUtilizador
@@ -1187,23 +1205,6 @@
             this.buttonCarregarNotas.UseVisualStyleBackColor = true;
             this.buttonCarregarNotas.Visible = false;
             this.buttonCarregarNotas.Click += new System.EventHandler(this.buttonCarregarNotas_Click);
-            // 
-            // labelCreditosEfetuados
-            // 
-            this.labelCreditosEfetuados.AutoSize = true;
-            this.labelCreditosEfetuados.Location = new System.Drawing.Point(6, 18);
-            this.labelCreditosEfetuados.Name = "labelCreditosEfetuados";
-            this.labelCreditosEfetuados.Size = new System.Drawing.Size(102, 13);
-            this.labelCreditosEfetuados.TabIndex = 9;
-            this.labelCreditosEfetuados.Text = "Creditos Efetuados: ";
-            // 
-            // textBoxCreditosEfetuados
-            // 
-            this.textBoxCreditosEfetuados.Location = new System.Drawing.Point(114, 15);
-            this.textBoxCreditosEfetuados.Name = "textBoxCreditosEfetuados";
-            this.textBoxCreditosEfetuados.ReadOnly = true;
-            this.textBoxCreditosEfetuados.Size = new System.Drawing.Size(113, 20);
-            this.textBoxCreditosEfetuados.TabIndex = 10;
             // 
             // CalcularMedia
             // 

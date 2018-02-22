@@ -205,6 +205,7 @@ namespace CalcularMedia
             buttonCarregarNotas.Visible = true;
             limparMediaECreditos();
             progressBarCurso.Value = 0;
+            carregarMediaECreditosUtilizador(numeroUtilizadorAtivo);
 
             carregarCadeirasRamoUtilizador();
             resetNotasCadeiras();
@@ -243,10 +244,12 @@ namespace CalcularMedia
                         SqlConnection sqlConn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CalcularMedia\CalcularMedia\BaseDadosUtilizadores.mdf;Integrated Security=True");
                         SqlDataAdapter da = new SqlDataAdapter();
 
-                        da.InsertCommand = new SqlCommand("INSERT INTO Aluno VALUES(@numero,@nome,@ramo,NULL)", sqlConn);
+                        da.InsertCommand = new SqlCommand("INSERT INTO Aluno VALUES(@numero,@nome,@ramo,@creditosEfetuados, @media)", sqlConn);
                         da.InsertCommand.Parameters.Add("@numero", SqlDbType.Int).Value = numeroAluno;
                         da.InsertCommand.Parameters.Add("@nome", SqlDbType.NVarChar).Value = nomeAluno;
                         da.InsertCommand.Parameters.Add("@ramo", SqlDbType.NVarChar).Value = ramoAluno;
+                        da.InsertCommand.Parameters.Add("@creditosEfetuados", SqlDbType.Int).Value = 0;
+                        da.InsertCommand.Parameters.Add("@media", SqlDbType.NVarChar).Value = 0;
 
                         sqlConn.Open();
                         da.InsertCommand.ExecuteNonQuery();
@@ -461,6 +464,8 @@ namespace CalcularMedia
 
                 MessageBox.Show("As suas notas foram atualizadas com sucesso.", "Notas Atualizadas",
                           MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                buttonCalcularMedia.Visible = true;
             }
 
         }
@@ -1385,8 +1390,9 @@ namespace CalcularMedia
             SqlDataAdapter da = new SqlDataAdapter();
 
             SqlCommand command = sqlConnTwo.CreateCommand();
-            command.CommandText = "UPDATE Aluno SET Media = @Media WHERE [Numero] = '" + textBoxNumeroUtilizadorAtivo.Text + "'";
+            command.CommandText = "UPDATE Aluno SET Media = @Media, CreditosEfetuados = @CreditosEfetuados WHERE [Numero] = '" + textBoxNumeroUtilizadorAtivo.Text + "'";
             command.Parameters.AddWithValue("@Media", mediaPonderada);
+            command.Parameters.AddWithValue("@CreditosEfetuados", Int32.Parse(creditosEfetuados.ToString()));
             sqlConnTwo.Open();
             command.ExecuteNonQuery();
             sqlConnTwo.Close();
@@ -1401,9 +1407,27 @@ namespace CalcularMedia
             textBoxCreditosEfetuados.Text = "";
         }
 
-        private void carregarMediaECreditosUtilizador()
+        private void carregarMediaECreditosUtilizador(int numeroAluno)
         {
+            int count = 0;
+            SqlConnection sqlConn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CalcularMedia\CalcularMedia\BaseDadosUtilizadores.mdf;Integrated Security=True");
+            sqlConn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT [Media], [CreditosEfetuados] FROM [Aluno] WHERE [Numero] = '" + numeroAluno + "'", sqlConn);
+            SqlDataReader myreader = cmd.ExecuteReader();
 
+            foreach (IDataRecord record in GetFromReader(myreader))
+            {
+                textBoxCreditosEfetuados.Text = record.GetInt32(0).ToString();
+                textBoxMediaUtilizador.Text = record.GetInt32(1).ToString();
+                count++;
+            }
+
+            if (count == 0)
+            {
+                setTextBoxZero();
+            }
+
+            sqlConn.Close();
         }
     }
 }
