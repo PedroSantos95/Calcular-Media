@@ -56,7 +56,7 @@
             this.label1_1_3 = new System.Windows.Forms.Label();
             this.label1_1_2 = new System.Windows.Forms.Label();
             this.groupBoxProgressoCurso = new System.Windows.Forms.GroupBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBarCurso = new System.Windows.Forms.ProgressBar();
             this.groupBox2Ano = new System.Windows.Forms.GroupBox();
             this.groupBox2Ano2Semstre = new System.Windows.Forms.GroupBox();
             this.textBox2_2_5 = new System.Windows.Forms.TextBox();
@@ -111,7 +111,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelMedia = new System.Windows.Forms.Label();
             this.buttonCalcularMedia = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxMediaUtilizador = new System.Windows.Forms.TextBox();
             this.groupBoxUtilizadorAtivo = new System.Windows.Forms.GroupBox();
             this.textBoxRamoUtilizadorAtivo = new System.Windows.Forms.TextBox();
             this.textBoxNumeroUtilizadorAtivo = new System.Windows.Forms.TextBox();
@@ -131,6 +131,9 @@
             this.buttonCarregarUtilizador = new System.Windows.Forms.Button();
             this.comboBoxUtilizadoresExistentes = new System.Windows.Forms.ComboBox();
             this.labelUtilizadorExistente = new System.Windows.Forms.Label();
+            this.buttonCarregarNotas = new System.Windows.Forms.Button();
+            this.labelCreditosEfetuados = new System.Windows.Forms.Label();
+            this.textBoxCreditosEfetuados = new System.Windows.Forms.TextBox();
             this.groupBox1Ano.SuspendLayout();
             this.groupBox1Ano2Semestre.SuspendLayout();
             this.groupBox1Ano1Semestre.SuspendLayout();
@@ -419,7 +422,7 @@
             // 
             // groupBoxProgressoCurso
             // 
-            this.groupBoxProgressoCurso.Controls.Add(this.progressBar1);
+            this.groupBoxProgressoCurso.Controls.Add(this.progressBarCurso);
             this.groupBoxProgressoCurso.Location = new System.Drawing.Point(16, 297);
             this.groupBoxProgressoCurso.Name = "groupBoxProgressoCurso";
             this.groupBoxProgressoCurso.Size = new System.Drawing.Size(364, 72);
@@ -427,12 +430,13 @@
             this.groupBoxProgressoCurso.TabStop = false;
             this.groupBoxProgressoCurso.Text = "Progresso de Curso";
             // 
-            // progressBar1
+            // progressBarCurso
             // 
-            this.progressBar1.Location = new System.Drawing.Point(19, 18);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(325, 34);
-            this.progressBar1.TabIndex = 0;
+            this.progressBarCurso.Location = new System.Drawing.Point(19, 18);
+            this.progressBarCurso.Maximum = 180;
+            this.progressBarCurso.Name = "progressBarCurso";
+            this.progressBarCurso.Size = new System.Drawing.Size(325, 34);
+            this.progressBarCurso.TabIndex = 0;
             // 
             // groupBox2Ano
             // 
@@ -948,9 +952,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBoxCreditosEfetuados);
+            this.groupBox1.Controls.Add(this.labelCreditosEfetuados);
             this.groupBox1.Controls.Add(this.labelMedia);
             this.groupBox1.Controls.Add(this.buttonCalcularMedia);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxMediaUtilizador);
             this.groupBox1.Location = new System.Drawing.Point(387, 297);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(395, 72);
@@ -961,7 +967,7 @@
             // labelMedia
             // 
             this.labelMedia.AutoSize = true;
-            this.labelMedia.Location = new System.Drawing.Point(91, 35);
+            this.labelMedia.Location = new System.Drawing.Point(66, 49);
             this.labelMedia.Name = "labelMedia";
             this.labelMedia.Size = new System.Drawing.Size(42, 13);
             this.labelMedia.TabIndex = 8;
@@ -977,13 +983,13 @@
             this.buttonCalcularMedia.UseVisualStyleBackColor = true;
             this.buttonCalcularMedia.Click += new System.EventHandler(this.buttonCalcularMedia_Click);
             // 
-            // textBox1
+            // textBoxMediaUtilizador
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(113, 20);
-            this.textBox1.TabIndex = 7;
+            this.textBoxMediaUtilizador.Location = new System.Drawing.Point(114, 46);
+            this.textBoxMediaUtilizador.Name = "textBoxMediaUtilizador";
+            this.textBoxMediaUtilizador.ReadOnly = true;
+            this.textBoxMediaUtilizador.Size = new System.Drawing.Size(113, 20);
+            this.textBoxMediaUtilizador.TabIndex = 7;
             // 
             // groupBoxUtilizadorAtivo
             // 
@@ -1171,11 +1177,40 @@
             this.labelUtilizadorExistente.TabIndex = 0;
             this.labelUtilizadorExistente.Text = "Selecionar Utilizador Existente:";
             // 
+            // buttonCarregarNotas
+            // 
+            this.buttonCarregarNotas.Location = new System.Drawing.Point(707, 973);
+            this.buttonCarregarNotas.Name = "buttonCarregarNotas";
+            this.buttonCarregarNotas.Size = new System.Drawing.Size(95, 23);
+            this.buttonCarregarNotas.TabIndex = 4;
+            this.buttonCarregarNotas.Text = "Guardar Notas";
+            this.buttonCarregarNotas.UseVisualStyleBackColor = true;
+            this.buttonCarregarNotas.Visible = false;
+            this.buttonCarregarNotas.Click += new System.EventHandler(this.buttonCarregarNotas_Click);
+            // 
+            // labelCreditosEfetuados
+            // 
+            this.labelCreditosEfetuados.AutoSize = true;
+            this.labelCreditosEfetuados.Location = new System.Drawing.Point(6, 18);
+            this.labelCreditosEfetuados.Name = "labelCreditosEfetuados";
+            this.labelCreditosEfetuados.Size = new System.Drawing.Size(102, 13);
+            this.labelCreditosEfetuados.TabIndex = 9;
+            this.labelCreditosEfetuados.Text = "Creditos Efetuados: ";
+            // 
+            // textBoxCreditosEfetuados
+            // 
+            this.textBoxCreditosEfetuados.Location = new System.Drawing.Point(114, 15);
+            this.textBoxCreditosEfetuados.Name = "textBoxCreditosEfetuados";
+            this.textBoxCreditosEfetuados.ReadOnly = true;
+            this.textBoxCreditosEfetuados.Size = new System.Drawing.Size(113, 20);
+            this.textBoxCreditosEfetuados.TabIndex = 10;
+            // 
             // CalcularMedia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 979);
+            this.ClientSize = new System.Drawing.Size(845, 1003);
+            this.Controls.Add(this.buttonCarregarNotas);
             this.Controls.Add(this.groupBoxDadosUtilizador);
             this.Controls.Add(this.groupBox3Ano);
             this.Controls.Add(this.groupBox2Ano);
@@ -1235,9 +1270,9 @@
         private System.Windows.Forms.TextBox textBoxNomeUtilizador;
         private System.Windows.Forms.ComboBox comboBoxRamoCurso;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxMediaUtilizador;
         private System.Windows.Forms.GroupBox groupBoxProgressoCurso;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBarCurso;
         private System.Windows.Forms.GroupBox groupBoxUtilizadorAtivo;
         private System.Windows.Forms.Label labelMedia;
         private System.Windows.Forms.Button buttonCriarNovoUtilizador;
@@ -1316,6 +1351,9 @@
         private System.Windows.Forms.Label label3_1_3;
         private System.Windows.Forms.Label label3_1_2;
         private System.Windows.Forms.Label labelPreencherDados5;
+        private System.Windows.Forms.Button buttonCarregarNotas;
+        private System.Windows.Forms.TextBox textBoxCreditosEfetuados;
+        private System.Windows.Forms.Label labelCreditosEfetuados;
     }
 }
 
