@@ -16,7 +16,8 @@ namespace CalcularMedia
 
     public partial class CalcularMedia : Form
     {
-
+        public int contadorTeste = 0;
+        
         public CalcularMedia()
         {
             InitializeComponent();
@@ -30,7 +31,7 @@ namespace CalcularMedia
             /*
              * Cadeiras de Tronco Comum
              */
-
+            
             //1 Ano 1 Semestre
             label1_1_1.Text = "Análise Mat.: ";
             label1_1_1.Visible = true;
@@ -202,6 +203,7 @@ namespace CalcularMedia
             ramoUtilizadorAtivo = ramoUtilizador(numeroUtilizadorAtivo);
             textBoxRamoUtilizadorAtivo.Text = ramoUtilizadorAtivo;
             buttonCarregarNotas.Visible = true;
+            limparMediaECreditos();
             progressBarCurso.Value = 0;
 
             carregarCadeirasRamoUtilizador();
@@ -1374,12 +1376,34 @@ namespace CalcularMedia
                 mediaPonderada += sie * (6 / creditosEfetuados);
             }
 
-            //Console.WriteLine(mediaPonderada);
-            //Console.WriteLine(analise);
             textBoxCreditosEfetuados.Text = creditosEfetuados.ToString();
             System.Math.Round(mediaPonderada, 2);
             textBoxMediaUtilizador.Text = mediaPonderada.ToString("#.##"); 
             progressBarCurso.Value = Int32.Parse(creditosEfetuados.ToString());
+
+            SqlConnection sqlConnTwo = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CalcularMedia\CalcularMedia\BaseDadosUtilizadores.mdf;Integrated Security=True");
+            SqlDataAdapter da = new SqlDataAdapter();
+
+            SqlCommand command = sqlConnTwo.CreateCommand();
+            command.CommandText = "UPDATE Aluno SET Media = @Media WHERE [Numero] = '" + textBoxNumeroUtilizadorAtivo.Text + "'";
+            command.Parameters.AddWithValue("@Media", mediaPonderada);
+            sqlConnTwo.Open();
+            command.ExecuteNonQuery();
+            sqlConnTwo.Close();
+
+            MessageBox.Show("A sua média foi atualizada.", "Media Atualizada",
+                      MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void limparMediaECreditos()
+        {
+            textBoxMediaUtilizador.Text = "";
+            textBoxCreditosEfetuados.Text = "";
+        }
+
+        private void carregarMediaECreditosUtilizador()
+        {
+
         }
     }
 }
