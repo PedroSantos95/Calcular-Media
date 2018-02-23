@@ -1417,8 +1417,10 @@ namespace CalcularMedia
 
             foreach (IDataRecord record in GetFromReader(myreader))
             {
-                textBoxCreditosEfetuados.Text = record.GetInt32(0).ToString();
-                textBoxMediaUtilizador.Text = record.GetInt32(1).ToString();
+                //Console.WriteLine(record.GetDecimal(1).ToString());
+                textBoxMediaUtilizador.Text = record.GetDecimal(0).ToString();
+                textBoxCreditosEfetuados.Text = record.GetInt32(1).ToString();
+                progressBarCurso.Value = Int32.Parse(textBoxCreditosEfetuados.Text);
                 count++;
             }
 
@@ -1426,7 +1428,7 @@ namespace CalcularMedia
             {
                 setTextBoxZero();
             }
-
+          
             sqlConn.Close();
         }
     }
