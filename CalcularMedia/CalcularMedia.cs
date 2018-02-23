@@ -1261,11 +1261,6 @@ namespace CalcularMedia
                 mediaPonderada += rc * (6 / creditosEfetuados);
             }
 
-            if (progIIEfetuado)
-            {
-                mediaPonderada += progII * (7 / creditosEfetuados);
-            }
-
             if (apInternetEfetuado)
             {
                 mediaPonderada += ainet * (6 / creditosEfetuados);
@@ -1359,11 +1354,6 @@ namespace CalcularMedia
             if (topSoftwareEfetuado)
             {
                 mediaPonderada += topicosSoftware * (6 / creditosEfetuados);
-            }
-
-            if (daeEfetuado)
-            {
-                mediaPonderada += dae * (6 / creditosEfetuados);
             }
 
             if (sistApDecisaoEfetuado)
